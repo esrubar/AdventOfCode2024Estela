@@ -37,7 +37,7 @@ for (int i = 0; i < rows.Count; i++)
     }
     result.Reverse();
 
-    if (result.SequenceEqual(numbers))
+    if (!result.SequenceEqual(numbers))
     {
         var middle = result.Count / 2;
         var numberInMiddle = result[middle];
