@@ -16,4 +16,9 @@ public static class Utils
             throw new IOException();
         }
     }
+
+    public static List<string> SplitByLineBreak(this string text)
+    {
+        return [.. text.Split(["\r", "\n"], StringSplitOptions.RemoveEmptyEntries)];
+    }
 }
